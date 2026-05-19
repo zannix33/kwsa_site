@@ -3,7 +3,7 @@
     <div class="content-max-width">
 
       <a href="/" class="logo">
-        <img src="/images/logo.png" :alt="data.site_name" />
+        <img src="/images/logo.png" :alt="data.site_name">
       </a>
 
       <!--<<div class="content-full-width">
@@ -15,7 +15,7 @@
 
         </div>
 
-        a href="" class="get-atm">Get ATM</a>
+
       </div>-->
       <!--
 

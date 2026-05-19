@@ -8,6 +8,7 @@ use Illuminate\Contracts\Support\Responsable;
 use Modulatte\Core\Transformers\FeatureTransformer;
 use Modulatte\Core\Transformers\BenefitsTransformer;
 use Modulatte\Core\Transformers\ProcessTransformer;
+use Modulatte\Core\Transformers\ServiceTransformer;
 
 class HomePageResponse implements Responsable
 {
@@ -26,6 +27,7 @@ class HomePageResponse implements Responsable
             'features' => $this->item->blocks ? (new FeatureTransformer())->transformCollection(getBlocksByType($this->item, 'home_features'), 'display') : [],
             'processes' => $this->item->blocks ? (new ProcessTransformer())->transformCollection(getBlocksByType($this->item, 'process_block'), 'display') : [],
             'benefits' => $this->item->blocks ? (new BenefitsTransformer())->transformCollection(getBlocksByType($this->item, 'benefits_provide'), 'display') : [],
+            'services' => $this->item->blocks ? (new ServiceTransformer())->transformCollection(getBlocksByType($this->item, 'home_services'), 'display') : [],
         ]);
     }
 }

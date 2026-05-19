@@ -25,7 +25,10 @@ class PageRepository extends ModuleRepository
         'data' => [
             // Home
             'header_lead_copy',
-            'header_content',
+            'header_title',
+
+            'services_title',
+            'services_description',
 
             'home_features_content',
 

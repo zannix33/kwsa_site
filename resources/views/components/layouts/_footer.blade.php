@@ -18,8 +18,8 @@
         --}}
 
         <div class="footer-legal md:flex md:justify-between">
-            <p>© 2023, L&V Holdings LLC. All rights reserved.</p>
-            <a href="https:innowebitech.com" target="_blank" class="attr">Web Design by Innowebitech</a>
+            <p>© 2026, KingWizard Security Agency.</p>
+            <!--<a href="https:innowebitech.com" target="_blank" class="attr">Web Design by Innowebitech</a>-->
         </div>
 
     </div>

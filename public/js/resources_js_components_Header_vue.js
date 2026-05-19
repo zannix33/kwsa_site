@@ -55,6 +55,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: {
     menu: Array,
@@ -181,25 +183,7 @@ var render = function() {
           _c("img", {
             attrs: { src: "/images/logo.png", alt: _vm.data.site_name }
           })
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "content-full-width" }, [
-          _c("div", {
-            staticClass: "header-message",
-            domProps: { innerHTML: _vm._s(_vm.header) }
-          }),
-          _vm._v(" "),
-          _c("div", {
-            staticClass: "header-contact",
-            domProps: { innerHTML: _vm._s(_vm.data.note) }
-          }),
-          _vm._v(" "),
-          _c("a", { staticClass: "get-atm", attrs: { href: "" } }, [
-            _vm._v("Get ATM")
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "right" })
+        ])
       ]),
       _vm._v(" "),
       _c("nav", [

@@ -1,4 +1,10 @@
 @formFieldset(['id' => 'attributes', 'title' => 'Header Area'])
+
+@formField('input', [
+'name' => 'header_title',
+'label' => 'Header title',
+])
+
     @formField('wysiwyg', [
         'name' => 'header_lead_copy',
         'label' => 'Header Lead Copy',
@@ -9,19 +15,10 @@
         'placeholder' => 'Header Lead Copy',
     ])
 
-    @formField('input', [
-        'name' => 'header_contact',
-        'label' => 'Header Contact',
-    ])
+
 @endformFieldset
 
 @formFieldset(['id' => 'attributes', 'title' => 'Features Section'])
-
-    @formField('input', [
-        'name' => 'home_features_content',
-        'label' => 'Features Content',
-        'type' => 'textarea',
-    ])
 
     @formField('block_editor', [
         'name' => 'home_features',
@@ -31,126 +28,30 @@
 
 @endformFieldset
 
-@formFieldset(['id' => 'attributes', 'title' => 'About Section'])
+@formFieldset(['id' => 'attributes', 'title' => 'Services Section'])
 
-    @formField('input', [
-        'name' => 'about_header',
-        'label' => 'About Header',
-        'type'  => 'textarea',
-    ])
 
-    @formField('wysiwyg', [
-        'name' => 'about_text',
-        'label' => 'About Text',
-        'toolbarOptions' => [
-            'bold',
-            'italic'
-        ],
-        'placeholder' => 'Header Lead Copy',
-    ])
+@formField('input', [
+'name' => 'services_title',
+'label' => 'Services title',
+])
 
-    @formField('input', [
-        'name' => 'about_contact_text',
-        'label' => 'Contact Text',
-    ])
+@formField('wysiwyg', [
+'name' => 'services_description',
+'label' => 'Services Description',
+'toolbarOptions' => [
+'bold',
+'italic'
+],
+'placeholder' => 'Header Lead Copy',
+])
 
+@formField('block_editor', [
+'name' => 'home_services',
+'label' => 'Add Services',
+'blocks' => ['home_services'],
+])
 @endformFieldset
-
-@formFieldset(['id' => 'attributes', 'title' => 'Benefits Section'])
-
-    @formField('input', [
-        'name' => 'benefits_text',
-        'label' => 'Benefits Text',
-    ])
-
-    @formField('block_editor', [
-        'name' => 'benefits_provide',
-        'label' => 'Add Benefits',
-        'blocks' => ['benefits_provide'],
-    ])
-
-    @formField('medias', [
-        'name' => 'benefits_image_1',
-        'label' => 'Icon 1',
-        'max' => 1,
-        'withVideoUrl' => false
-    ])
-
-    @formField('input', [
-        'name' => 'benefits_caption_1',
-        'label' => 'Benefits Caption 1',
-    ])
-
-    @formField('medias', [
-        'name' => 'benefits_image_2',
-        'label' => 'Icon 2',
-        'max' => 1,
-        'withVideoUrl' => false
-    ])
-
-    @formField('input', [
-        'name' => 'benefits_caption_2',
-        'label' => 'Benefits Caption 2',
-    ])
-
-    @formField('medias', [
-        'name' => 'benefits_image_3',
-        'label' => 'Icon 3',
-        'max' => 1,
-        'withVideoUrl' => false
-    ])
-
-    @formField('input', [
-        'name' => 'benefits_caption_3',
-        'label' => 'Benefits Caption 3',
-    ])
-
-    @formField('medias', [
-        'name' => 'benefits_image_4',
-        'label' => 'Icon 4',
-        'max' => 1,
-        'withVideoUrl' => false
-    ])
-
-    @formField('input', [
-        'name' => 'benefits_caption_4',
-        'label' => 'Benefits Caption 4',
-    ])
-
-    @formField('medias', [
-        'name' => 'benefits_image_5',
-        'label' => 'Icon 5',
-        'max' => 1,
-        'withVideoUrl' => false
-    ])
-
-    @formField('input', [
-        'name' => 'benefits_caption_5',
-        'label' => 'Benefits Caption 5',
-    ])
-
-    {{--@formField('block_editor', [
-        'name' => 'benefits_fee',
-        'label' => 'Add Fee',
-        'blocks' => ['benefits_fee'],
-    ])--}}
-
-@endformFieldset
-
-@formFieldset(['id' => 'attributes', 'title' => 'Process Section'])
-
-    @formField('input', [
-        'name' => 'process_text',
-        'label' => 'Process Text',
-    ])
-
-    @formField('block_editor', [
-        'name' => 'process_block',
-        'label' => 'Add Process',
-        'blocks' => ['process_block'],
-    ])
-@endformFieldset
-
 
 @formFieldset(['id' => 'attributes', 'title' => 'Contact Section'])
 

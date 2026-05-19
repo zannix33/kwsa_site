@@ -1256,7 +1256,7 @@ footer {
 @media (min-width: 1025px) {
   .site-header {
     height: 104px;
-    background-image: url("/images/header.png");
+    background-image: url("/images/headers.png");
     background-size: cover;
     overflow: initial;
   }
@@ -1757,9 +1757,8 @@ footer {
   flex-wrap: wrap;
 }
 .page-home .features-section .features .feature-box {
-  width: 270px;
+  width: calc(50% - 80px);
   margin-top: 46px;
-  margin-bottom: 45px;
   color: #fff;
 }
 .page-home .features-section .features .feature-box .feature-title {
@@ -1767,7 +1766,7 @@ footer {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 32px;
+  font-size: 35px;
   line-height: 150%;
 }
 .page-home .features-section .features .feature-box .feature-title strong {
@@ -1778,7 +1777,7 @@ footer {
 }
 .page-home .features-section .features .feature-box .feature-lead {
   margin-top: 18px;
-  font-family: "Jost";
+  font-family: "poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -1786,7 +1785,7 @@ footer {
 }
 .page-home .features-section .features .feature-box .feature-description {
   margin-top: 8px;
-  font-family: "Jost";
+  font-family: "poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1795,14 +1794,82 @@ footer {
   letter-spacing: 0.05em;
   color: #D6E3DB;
 }
+.page-home .features-section .features .feature-box .feature-description p {
+  color: #fff;
+}
 .page-home .features-section .features .feature-box .feature-content {
   margin-top: 14px;
-  font-family: "Jost";
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 180%;
   letter-spacing: 0.05em;
+}
+.page-home .features-section .features .feature-box .feature-content p {
+  color: #fff;
+}
+.page-home .features-section .features .feature-main {
+  position: absolute;
+  width: calc(33.33% - 66px);
+  margin-top: 46px;
+  color: #fff;
+}
+.page-home .features-section .features .feature-main .feature-title {
+  color: #fff;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 150%;
+}
+.page-home .features-section .features .feature-main .feature-title strong {
+  font-weight: 700;
+}
+.page-home .features-section .features .feature-main .feature-icon {
+  margin-top: 37px;
+  background-color: #C8A951;
+  width: 66px;
+  height: 66px;
+  Border-Radius: 50%;
+  display: flex;
+  justify-content: center;
+  /* Centers horizontally */
+  align-items: center;
+}
+.page-home .features-section .features .feature-main .feature-lead {
+  margin-top: 18px;
+  font-family: "poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+}
+.page-home .features-section .features .feature-main .feature-description {
+  margin-top: 8px;
+  font-family: "poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 180%;
+  /* or 29px */
+  letter-spacing: 0.05em;
+  color: #D6E3DB;
+}
+.page-home .features-section .features .feature-main .feature-description p {
+  color: #fff;
+}
+.page-home .features-section .features .feature-main .feature-content {
+  margin-top: 14px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 180%;
+  letter-spacing: 0.05em;
+}
+.page-home .features-section .features .feature-main .feature-content p {
+  color: #fff;
 }
 .page-home .about-section {
   padding-top: 100px;
@@ -1826,7 +1893,7 @@ footer {
 .page-home .about-section .about-container .about-content {
   margin-top: 24px;
   width: 570px;
-  font-family: "Jost";
+  font-family: "poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1849,7 +1916,7 @@ footer {
 }
 .page-home .about-section .about-container .about-box p {
   margin: 0;
-  font-family: "Jost";
+  font-family: "poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1863,7 +1930,7 @@ footer {
 }
 .page-home .about-section .about-container .about-note {
   margin-top: 16px;
-  font-family: "Jost";
+  font-family: "poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1909,7 +1976,7 @@ footer {
   font-weight: 600;
 }
 .page-home .benefits-section .containers.benefits-details .benefits-description {
-  font-family: "Jost";
+  font-family: "poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1939,7 +2006,7 @@ footer {
   margin: 0 auto 16px;
 }
 .page-home .benefits-section .containers.benefits-details .benefits-freebies .freebie span {
-  font-family: "Jost";
+  font-family: "poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -1993,7 +2060,7 @@ footer {
   text-align: center;
 }
 .page-home .process-section .process-description {
-  font-family: "Jost";
+  font-family: "poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -2026,9 +2093,7 @@ footer {
   color: #FFFFFF;
 }
 .page-home .grow-section {
-  background: #FAFBFF;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  background: #1F5FCC;
   margin-bottom: 316px;
 }
 .page-home .grow-section .grow-container {
@@ -2049,16 +2114,29 @@ footer {
   font-weight: 400;
   font-size: 32px;
   line-height: 48px;
+  color: #C8A951;
   margin-bottom: 32px;
 }
 .page-home .grow-section .grow-container .left .grow-description {
-  font-family: "Jost";
+  font-family: "poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
   /* or 178% */
   color: #3E5463;
+}
+.page-home .grow-section .grow-container .right .grow-title {
+  color: #C8A951;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 36px;
+  leading-trim: NONE;
+  line-height: 34px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 54px;
 }
 .page-home .grow-section .grow-container .right .contact-container {
   width: 595px;
@@ -2118,7 +2196,7 @@ footer {
   font-weight: 600;
 }
 .page-home .discover-section .discover-container .right .discover-note {
-  font-family: "Jost";
+  font-family: "poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -2169,19 +2247,64 @@ footer {
 @media (min-width: 767px) {
   .page-home .services-section {
     padding: 120px 0 60px;
+    margin-top: 189px;
   }
 }
-.page-home .services-section .title {
-  margin-bottom: 47px;
+.page-home .services-section .services-title {
+  margin-top: 32px;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 34px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0B3D91;
 }
-.page-home .services-section .title h2, .page-home .services-section .title legend {
-  margin: 0;
-  color: #394E54;
-}
-.page-home .services-section .title .button {
-  min-width: 176px;
+.page-home .services-section .services-description {
+  margin-top: 29px;
+  margin-bottom: 40px;
+  font-family: "Poppins";
+  font-weight: 400;
   font-size: 16px;
-  font-weight: 500;
+  line-height: 100%;
+  text-align: center;
+}
+.page-home .services-section .services-items {
+  display: flex;
+  flex-direction: column;
+}
+.page-home .services-section .service-main {
+  display: inline-flex;
+  margin-bottom: 107px;
+}
+.page-home .services-section .service-main :nth-child(even) .service-title {
+  order: 1;
+}
+.page-home .services-section .service-main :nth-child(even) .service-content {
+  order: 2;
+}
+.page-home .services-section .service-main div {
+  width: calc(50% - 32px);
+}
+.page-home .services-section .service-main .service-title {
+  width: 100%;
+  margin-bottom: 39px;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 24px;
+  leading-trim: NONE;
+  line-height: 23px;
+  letter-spacing: 0%;
+  color: #1F5FCC;
+}
+.page-home .services-section .service-main .service-content {
+  width: 100%;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
 }
 .page-home .booking-section {
   padding: 40px 0;
