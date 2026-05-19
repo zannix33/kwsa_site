@@ -1,0 +1,131 @@
+/*********************************************
+:: Footer Module
+********************************************/
+.site-footer {
+  position: relative;
+  width: 100%;
+  min-height: $footer-height-mobile;
+
+  background: #fff;
+
+  @media (min-width: $mediumish) {
+    min-height: $footer-height-desktop;
+  }
+
+  .footer-links {
+    padding: 40px 0;
+
+    text-align: center;
+
+    @media (min-width: $mediumish) {
+      padding: 60px 0;
+
+      text-align: left;
+    }
+
+    .links {
+      font-size: 0;
+
+      @media (min-width: $mediumish) {
+        width: 380px;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+          display: inline-block;
+          vertical-align: top;
+          width: 170px;
+          margin: 0 0 12px;
+
+          font-family: $font-family-2;
+          font-size: 14px;
+          line-height: 18px;
+
+          @media (min-width: $mediumish) {
+            margin: 0 20px 12px 0;
+          }
+
+          a {
+            font-family: $font-family-2;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 18px;
+            color: rgba(#232221, 0.7);
+          }
+        }
+      }
+    }
+
+    .contact {
+      margin-top: 20px;
+
+      @media (min-width: $mediumish) {
+        margin-top: 0;
+
+        text-align: right;
+      }
+
+      .tel {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 27px;
+
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 18px;
+        color: rgba(#232221, 0.7);
+      }
+
+      .social {
+        width: 100%;
+        margin: 20px 0;
+
+        a {
+          display: inline-block;
+          width: 27px;
+
+          opacity: 0.5;
+        }
+
+        a:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .footer-legal {
+    padding: 0 0 20px;
+
+    p,
+    a.attr {
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 0;
+
+      font-family: $font-family-2;
+      font-size: 12.5px;
+      font-weight: 300;
+      line-height: 18px;
+      text-align: center;
+      color: rgba(#5a5f5f, 0.5);
+
+      @media (min-width: $medium) {
+        // width: auto;
+        margin-right: auto;
+
+        text-align: left;
+      }
+    }
+
+    a.attr {
+      @media (min-width: $medium) {
+        text-align: right;
+      }
+    }
+  }
+}
+/********************************************/

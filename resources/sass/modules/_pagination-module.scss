@@ -1,0 +1,82 @@
+/*********************************************
+:: Pagination Module                    
+********************************************/
+.pagination-module {
+  text-align: center;
+
+	ul {
+    display: flex;
+    justify-content: center;
+		margin: 0 auto;
+		padding: 0;
+
+		li {
+      display: inline-block;
+      min-width: 32px;
+      height: 32px;
+      margin: 0 3px;
+
+      text-align: center;
+      cursor: pointer;
+
+      background: transparent;
+      border: 2px solid $color-1;
+      border-radius: 21px;
+
+      @media (min-width: $medium) {
+        min-width: 42px;
+        height: 42px;
+        margin: 0 7.5px;
+      }
+
+			a, button, span {
+				font-size: 14px;
+				line-height: 28px;
+        letter-spacing: -0.2px;
+				color: $grey-4;
+
+        @media (min-width: $medium) {
+          line-height: 38px;
+        }
+			}
+
+			&.active {
+				background: $color-2;
+				border-color: $color-2;
+
+				a, button, span { color: white; }
+			}
+		}
+
+    li.prev,
+    li.next {
+      min-width: 70px;
+      padding: 0 20px;
+    }
+
+    li.next,
+    li:hover {
+      background: $color-1;
+      border-color: $color-1;
+
+      a {
+        color: white;
+      }
+    }
+
+    li.disabled {
+      opacity: 0.5;
+    }
+
+    li.active {
+      background: $color-4;
+      border-color: $color-4;
+
+      a {
+        color: white;
+      }
+    }
+	}
+}
+/********************************************/
+

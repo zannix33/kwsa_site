@@ -1,0 +1,42 @@
+/*********************************************
+:: News Detail Page                   
+********************************************/
+.page-news-detail {
+
+  .body-section {
+    padding: 40px 0 80px;
+
+    @media (min-width: $medium) {
+      padding: 60px 0 100px;
+    }
+
+    .button {
+      min-width: 120px;
+      margin-bottom: 20px;
+
+      @media (min-width: $medium) {
+        top: 11px;
+      }
+    }
+
+    .h2 {
+      margin-bottom: 12px;
+    }
+
+    p.date {
+      margin-bottom: 41px;
+
+      font-size: 14px;
+      letter-spacing: -0.2px;
+      line-height: 24px;
+      color: #2a2a2a;
+    }
+
+    img {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+  /********************************************/
+
+}

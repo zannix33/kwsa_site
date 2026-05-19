@@ -1,0 +1,30 @@
+{
+	"name" : "modulatte/core",
+	"description" : "Core CMS module for Modulatte 3",
+	"authors": [
+	   {
+	       "name": "Brownpaperbag LTD",
+	       "email": "dev@brownpaperbag.co.nz"
+	   }
+	],
+	"require": {},
+	"autoload": {        
+        "psr-4": {
+            "Modulatte\\": "src/"
+        }
+    },
+	"minimum-stability": "stable",
+	"repositories": [
+	   {
+	       "type": "path",
+	       "url": "./packages/modulatte/core/"
+	   }
+	],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modulatte\\Core\\ModulatteServiceProvider"
+            ]
+        }
+    }
+}

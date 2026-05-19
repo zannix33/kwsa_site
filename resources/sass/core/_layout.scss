@@ -1,0 +1,188 @@
+/*********************************************
+:: Layout
+********************************************/
+
+// Remove blue highlight on click
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  max-width: 100%;
+}
+
+#app {
+  overflow-x: hidden;
+}
+
+/*******************************************/
+// Main <section class="main" role="main">
+.main {
+  min-height: calc(100vh - #{$header-height-mobile + $footer-height-mobile});
+
+  @media (min-width: $mediumish) {
+    min-height: calc(100vh - #{$header-height-desktop + $footer-height-desktop});
+  }
+}
+
+/*******************************************/
+// Content Max Width
+.content-max-width {
+  position: relative;
+  width: 100%;
+  max-width: 1210px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+/*******************************************/
+// Content Full Width
+.content-full-width {
+  position: relative;
+  max-width: 1210px;
+  margin: 0 auto;
+  padding: 0;
+  clear: both;
+}
+
+/*******************************************/
+// Narrow Content Max Width
+.content-narrow-width {
+  position: relative;
+  width: 100%;
+  max-width: 610px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+/*******************************************/
+// Breakpoints
+.mob {
+  @media (min-width: $mediumish) {
+    display: none !important;
+  }
+}
+.desktop {
+  @media (max-width: $mediumish) {
+    display: none !important;
+  }
+}
+
+/*******************************************/
+// Flex
+// .flex {
+//   display: flex;
+//   justify-content: flex-start;
+//   align-items: flex-start;
+//   flex-flow: row wrap;
+
+//   &.flex-end {
+//     justify-content: flex-end;
+//   }
+//   &.flex-around {
+//     justify-content: space-around;
+//   }
+//   &.flex-between {
+//     justify-content: space-between;
+//   }
+//   &.flex-center {
+//     justify-content: center;
+//   }
+//   &.align-center {
+//     align-items: center;
+//   }
+//   &.align-baseline {
+//     align-items: baseline;
+//   }
+// }
+
+// .md {
+//   @media (min-width: $medium) {
+//     &\:flex {
+//       display: flex;
+//       justify-content: flex-start;
+//       align-items: flex-start;
+//       flex-flow: row wrap;
+//     }
+//     &\:flex-end {
+//       justify-content: flex-end;
+//     }
+//     &\:flex-around {
+//       justify-content: space-around;
+//     }
+//     &\:flex-between {
+//       justify-content: space-between;
+//     }
+//     &\:flex-center {
+//       justify-content: center;
+//     }
+
+//     &\:align-center {
+//       align-items: center;
+//     }
+//     &\:align-baseline {
+//       align-items: baseline;
+//     }
+//   }
+// }
+
+// .mdish {
+//   @media (min-width: $mediumish) {
+//     &\:flex {
+//       display: flex;
+//       justify-content: flex-start;
+//       align-items: flex-start;
+//       flex-flow: row wrap;
+//     }
+//     &\:flex-end {
+//       justify-content: flex-end;
+//     }
+//     &\:flex-around {
+//       justify-content: space-around;
+//     }
+//     &\:flex-between {
+//       justify-content: space-between;
+//     }
+//     &\:flex-center {
+//       justify-content: center;
+//     }
+
+//     &\:align-center {
+//       align-items: center;
+//     }
+//     &\:align-baseline {
+//       align-items: baseline;
+//     }
+//   }
+// }
+
+// .lg {
+//   @media (min-width: $large) {
+//     &\:flex {
+//       display: flex;
+//       justify-content: flex-start;
+//       align-items: flex-start;
+//       flex-flow: row wrap;
+//     }
+//     &\:flex-end {
+//       justify-content: flex-end;
+//     }
+//     &\:flex-around {
+//       justify-content: space-around;
+//     }
+//     &\:flex-between {
+//       justify-content: space-between;
+//     }
+//     &\:flex-center {
+//       justify-content: center;
+//     }
+
+//     &\:align-center {
+//       align-items: center;
+//     }
+//     &\:align-baseline {
+//       align-items: baseline;
+//     }
+//   }
+// }
+/*******************************************/

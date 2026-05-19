@@ -1,0 +1,1 @@
+@include('front.products.detail')

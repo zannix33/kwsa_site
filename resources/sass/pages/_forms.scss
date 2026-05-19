@@ -1,0 +1,38 @@
+/*********************************************
+:: Forms Page                   
+********************************************/
+.page-forms {
+
+  .body-section {
+    padding: 40px 0 60px;
+
+    @media (min-width: $medium) {
+      padding: 60px 0 100px;
+    }
+
+    .h2 {
+        margin-bottom: 33px;
+
+        letter-spacing: -0.64px;
+    }
+
+    .leadcopy {
+      margin-bottom: 60px;
+
+      font-weight: 400;
+      line-height: 28px;
+    }
+
+    .form-field.send {
+      display: flex;
+      padding: 5px 0 0;
+
+      .button {
+        width: 135px;
+        margin-left: auto;
+      }
+    }
+  }
+  /********************************************/
+
+}

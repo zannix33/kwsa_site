@@ -1,0 +1,49 @@
+/*********************************************
+:: Core
+   Base Elements
+   eg. typography, fonts, forms, buttons etc.
+********************************************/
+
+// @tailwind base;
+// @tailwind components;
+@tailwind utilities;
+@import 'core/loader';
+@import 'core/variables';
+@import 'core/mixins';
+@import 'core/normalize';
+@import 'core/typography';
+@import 'core/buttons';
+@import 'core/tables';
+@import 'core/layout';
+@import 'core/forms';
+@import 'core/animations';
+@import 'core/print';
+@import 'core/fonts';
+
+
+/*********************************************
+:: Modules
+********************************************/
+@import 'modules/header-module';
+@import 'modules/footer-module';
+@import 'modules/title-module';
+@import 'modules/popup-module';
+@import 'modules/pagination-module';
+
+/*********************************************
+:: Pages
+********************************************/
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/news';
+@import 'pages/news-detail';
+@import 'pages/services';
+@import 'pages/service-detail';
+@import 'pages/forms';
+@import 'pages/contact';
+
+/*********************************************
+:: JS Plugins
+********************************************/
+@import 'js-plugins/lightbox';
+@import 'js-plugins/slick';

@@ -1,0 +1,72 @@
+/*********************************************
+:: Variables
+********************************************/
+
+//Breakpoint Sizes
+$tiny: 350px;
+$small: 450px;
+$smallish: 600px;
+$medium: 767px;
+$mediumish: 1025px;
+$large: 1160px;
+$largeish: 1280px;
+$huge: 1440px;
+$bigmac: 1920px;
+
+/*******************************************/
+//Fonts
+
+// Base Fonts
+$font-family-1: poppins, 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+$font-family-2: work-sans, poppins, 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+$font-icon: 'icomoon';
+
+// Fonts Weights
+$font-light: 300;
+$font-normal: 400;
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+$font-extrabold: 900;
+
+/*******************************************/
+//Colors
+
+// Brand Colorss
+$color-1: #394e54; //grey
+$color-2: #7c9e48; //green
+$color-3: #b4253d; //red
+$color-4: #81b1ce; //blue
+
+// Shades of Grey
+$grey-1: #f9f9f9;
+$grey-2: #4a4a4a;
+$grey-3: #615a4e;
+$grey-4: #505050;
+$grey-5: #232221;
+
+// Links
+$color-link: $color-1;
+$color-link-hover: darken($color-link, 12%);
+
+// User Feedback
+$color-message: $grey-2;
+$color-attention: $color-1;
+$color-success: #38b449;
+
+// Social Media
+$color-facebook: #3b5998;
+$color-twitter: #55acee;
+$color-vimeo: #1ab7ea;
+$color-youtube: #cd201f;
+$color-gplus: #dc4e41;
+
+/*******************************************/
+//Page Height Calculator
+$header-height-desktop: 104px;
+$header-height-mobile: 118px;
+$header-height-desktop-tall: 772px;
+$header-height-desktop-about: 725px;
+
+$footer-height-desktop: 79px;
+$footer-height-mobile: 79px;

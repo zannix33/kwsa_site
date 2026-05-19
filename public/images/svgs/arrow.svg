@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="58px" height="58px" viewBox="0 0 58 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 3</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Service-Detail" transform="translate(-1201.000000, -2280.000000)">
+            <g id="Group-3" transform="translate(1201.000000, 2280.000000)">
+                <circle id="Oval" fill="#394E54" cx="29" cy="29" r="29"></circle>
+                <g id="keyboard_arrow_down_black_24dp" transform="translate(31.000000, 29.000000) scale(-1, 1) rotate(-270.000000) translate(-31.000000, -29.000000) translate(4.000000, 2.000000)">
+                    <polygon id="Path" points="0 0 54 0 54 54 0 54"></polygon>
+                    <polygon id="Path" fill="#FFFFFF" fill-rule="nonzero" points="17.1725 19 27.5 29.5074224 37.8275 19 41 22.2348178 27.5 36 14 22.2348178"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

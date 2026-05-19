@@ -1,0 +1,46 @@
+/*********************************************
+:: Site Loader
+********************************************/
+
+#site-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 9999999999999999999;
+
+  background-color: white;
+
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: calc(50% - 100px);
+    left: calc(50% - 100px);
+    bottom: 0;
+
+    width: 200px;
+    height: 200px;
+
+    background-image: url('/images/logo.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    animation: loader-fade infinite 1s;
+  }
+}
+
+#site-loader.hide {
+  visibility: hidden;
+  transition: all 1s ease-in-out;
+  opacity: 0;
+}
+
+#site-loader.no-loader {
+  display: none;
+}

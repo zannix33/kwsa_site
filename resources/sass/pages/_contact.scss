@@ -1,0 +1,183 @@
+/*********************************************
+:: Contact Page                   
+********************************************/
+.page-contact {
+
+  .tabs-section {
+    margin: 20px 0;
+
+    @media (min-width: $mediumish) {
+      margin: -20px 0 50px;
+    }
+
+    .button {
+      min-width: 115px;
+      margin: 0 11px 10px 0;
+      padding: 9px 18px;
+
+      cursor: pointer;
+    }
+
+    .button:first-of-type {
+      color: $color-4;
+      border-color: $color-4;
+
+      &.active,
+      &:hover {
+        color: white;
+        background: $color-4;
+      }
+    }
+
+    .button:nth-of-type(2) {
+      color: $color-2;
+      border-color: $color-2;
+
+      &.active,
+      &:hover {
+        color: white;
+        background: $color-2;
+      }
+    }
+
+    .button:nth-of-type(3) {
+      color: $color-3;
+      border-color: $color-3;
+
+      &.active,
+      &:hover {
+        color: white;
+        background: $color-3;
+      }
+    }
+  }
+  /********************************************/
+
+  .body-section {
+    padding: 40px 0 80px;
+
+    @media (min-width: $medium) {
+      padding: 0 0 100px;
+    }
+
+    .content {
+      width: 100%;
+      padding: 0 0 40px;
+
+      @media (min-width: $medium) {
+        width: calc(100% - 350px);
+        padding: 0 30px 0 0;
+      }
+      @media (min-width: $mediumish) {
+        width: calc(100% - 670px);
+        padding: 0 120px 0 0;
+      }
+
+      .phone {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 15px;
+
+        font-family: $font-family-2;
+        font-size: 48px;
+        font-weight: 600;
+        letter-spacing: -0.6px;
+        line-height: 50px;
+        color: $color-2;
+      }
+
+      .email {
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: -0.3px;
+        line-height: 30px;
+        color: #394e54;
+      }
+    }
+
+    .form {
+      padding: 40px 0;
+
+      @media (min-width: $medium) {
+        width: 350px;
+        padding: 28px 0 80px;
+      }
+      @media (min-width: $mediumish) {
+        width: 670px;
+      }
+
+      .form-field.send {
+        display: flex;
+        padding: 5px 0 0;
+
+        .button {
+          width: 135px;
+          margin-left: auto;
+        }
+      }
+    }
+
+    .contact-info {
+      padding: 40px;
+
+      @media (min-width: $mediumish) {
+        padding: 90px;
+      }
+
+      h3, p {
+        margin: 0;
+        color: white;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 22px;
+
+        @media (min-width: $mediumish) {
+          font-size: 22px;
+          letter-spacing: -0.24px;
+          line-height: 32px;
+        }
+      }
+
+      .block:nth-of-type(2) {
+        @media (min-width: $mediumish) {
+          padding-left: 70px;
+        }
+      }
+    }
+
+  }
+  /********************************************/
+
+  .body-section.east {
+    .content {
+      .phone { color: $color-4; }
+    }
+    .contact-info {
+      background: $color-4;
+    }
+  }
+  /********************************************/
+
+  .body-section.after {
+    .content {
+      .phone { color: $color-2; }
+    }
+    .contact-info {
+      background: $color-2;
+    }
+  }
+  /********************************************/
+
+  .body-section.emergency {
+    .content {
+      .phone { color: $color-3; }
+    }
+    .contact-info {
+      background: $color-3;
+    }
+  }
+  /********************************************/
+
+}

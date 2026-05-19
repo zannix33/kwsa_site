@@ -1,0 +1,67 @@
+/*********************************************
+:: About Page                   
+********************************************/
+.page-about {
+
+  .body-section {
+    padding: 40px 0 80px;
+
+    @media (min-width: $medium) {
+      padding: 0 0 100px;
+    }
+
+    .content {
+      width: 100%;
+      padding: 0 0 40px;
+
+      @media (min-width: $medium) {
+        width: calc(100% - 250px);
+        padding: 0 30px 0 0;
+      }
+      @media (min-width: $mediumish) {
+        width: calc(100% - 470px);
+        padding: 0 120px 0 0;
+      }
+
+      h2 {
+        margin-bottom: 43px;
+
+        letter-spacing: -0.64px;
+      }
+    }
+
+    .hero {
+      position: relative;
+
+      align-self: flex-start;
+      width: 100%;
+
+      @media (min-width: $medium) {
+        width: 250px;
+      }
+      @media (min-width: $mediumish) {
+        width: 470px;
+      }
+
+      img {
+        width: 100%;
+        margin: 0;
+      }
+
+      img.watermark {
+        position: absolute;
+        top: calc(100% - 26px);
+        right: 20px;
+
+        width: 100px;
+
+        @media (min-width: $medium) {
+          width: 172px;
+          right: -62px
+        }
+      }
+    }
+  }
+  /********************************************/
+
+}

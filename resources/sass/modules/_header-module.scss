@@ -1,0 +1,250 @@
+/*********************************************
+:: Header Module
+********************************************/
+.site-header {
+  position: relative;
+  z-index: 99;
+
+  width: 100%;
+  height: $header-height-mobile;
+
+  @media (min-width: $mediumish) {
+    height: $header-height-desktop;
+
+    background-image: url('/images/headers.png');
+    background-size: cover;
+
+    overflow: initial;
+
+    .about-height {
+      height: $header-height-desktop-about;
+    }
+  }
+
+  .logo {
+    position: absolute;
+    top: 17px;
+    left: 20px;
+
+    transition: none;
+
+    img {
+      width: auto;
+      height: 50px;
+      margin: 0;
+
+      @media (min-width: $mediumish) {
+        height: 76px;
+      }
+    }
+  }
+
+  .header-message {
+    padding-top: 210px;
+    p {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 56px;
+      line-height: 150%;
+
+      margin: 0;
+
+      strong {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 56px;
+
+        line-height: 150%;
+
+        color: #D3AF5E;
+      }
+    }
+  }
+
+  .get-atm {
+    position: absolute;
+    padding: 15px 40px;
+    top: 620px;
+
+    background: #005C32;
+    box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+
+    color: #fff;
+  }
+
+  .header-contact {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 180%;
+
+    letter-spacing: 0.05em;
+
+    color: #005C32;
+  }
+
+  .right {
+    position: absolute;
+    top: 17px;
+    right: 20px;
+
+    @media (min-width: $mediumish) {
+      top: 35px;
+    }
+
+    .tel {
+      display: none;
+
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: -0.20px;
+      line-height: 50px;
+      color: #232221;
+
+      @media (min-width: $medium) {
+        display: inline-block;
+      }
+    }
+
+    .button {
+      margin-left: 26px;
+    }
+  }
+
+  nav {
+    position: absolute;
+    top: 118px;
+    right: -100%;
+    z-index: 999;
+
+    width: 0%;
+    height: calc(100vh - 118px);
+    padding: 40px 20px;
+
+    background: $color-1;
+
+    transition: right 0.25s ease-in-out;
+
+    @media (min-width: $mediumish) {
+      max-width: 518px;
+      padding: 60px;
+    }
+
+    ul.top {
+      margin: 0;
+      padding: 0;
+
+      text-align: left;
+    }
+
+    li {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      margin: 0;
+
+      a {
+        position: relative;
+
+        display: inline-block;
+        margin: 0 0 20px;
+        padding: 0;
+
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 30px;
+        letter-spacing: -0.3px;
+        color: white;
+
+        @media (min-width: $mediumish) {
+          margin: 0 0 40px;
+        }
+
+        &:hover {
+          opacity: 0.7;
+        }
+
+        &.selected {
+          color: $color-2;
+          &:hover {
+            opacity: 1;
+          }
+          &:active {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  .hamburger {
+    position: relative;
+
+    display: inline-block;
+    vertical-align: top;
+    width: 50px;
+    height: 50px;
+
+    font-size: 0;
+
+    background-color: #394e54;
+    border-radius: 50%;
+
+    transition: right 0.25s ease-in-out;
+
+    @media (min-width: $mediumish) {
+      margin-left: 9px;
+      margin-top: 1px;
+    }
+
+    span {
+      position: absolute;
+      top: 20px;
+      left: 15px;
+
+      width: 18px;
+      height: 2px;
+      background: white;
+
+      // transition: all 0.25s ease-in-out;
+    }
+    span:nth-of-type(2) {
+      top: 50%;
+    }
+    span:nth-of-type(3) {
+      top: calc(50% + 5px);
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.site-header.open {
+  nav {
+    right: 0;
+
+    width: 100%;
+  }
+
+  .hamburger {
+    span {
+      &:nth-of-type(1) {
+        top: 50%;
+        transform: rotate(45deg);
+      }
+      &:nth-of-type(2) {
+        opacity: 0;
+      }
+      &:nth-of-type(3) {
+        top: 50%;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+/********************************************/
