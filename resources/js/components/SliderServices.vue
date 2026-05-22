@@ -1,6 +1,6 @@
 <template>
   <div class='services-slideshow'>
-    
+
     <VueSlickCarousel
       v-bind='settings'
     >
@@ -8,10 +8,10 @@
         <a :href='slide.url' class="image">
           <img :src='slide.image' :alt='slide.title'>
         </a>
-        <div class='text'>
+        <!--<div class='text'>
           <h3 class="h4">{{ slide.title }}</h3>
           <a :href='slide.url'>Learn more <span class="material-icons">arrow_forward</span></a>
-        </div>
+        </div>-->
       </article>
     </VueSlickCarousel>
 
@@ -33,7 +33,7 @@ export default {
     isOpen: false,
     settings: {
       'dots': false,
-      'arrows': true,
+      'arrows': false,
       'edgeFriction': 0.35,
       'infinite': false,
       'speed': 500,

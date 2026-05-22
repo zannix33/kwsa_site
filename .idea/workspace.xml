@@ -5,24 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3af83318-2c64-490d-9f11-6547fb2bad45" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/packages/modulatte/core/src/Transformers/ServiceTransformer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/blocks/home_services.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/lvatmsite.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/modulatte/core/src/Transformers/ClientsLogoTransformer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/modulatte/core/src/Transformers/JoinReasonTransformer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/blocks/client_logos.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/blocks/join_reason.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/modulatte/core/src/Http/Responses/HomePageResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/modulatte/core/src/Http/Responses/HomePageResponse.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/modulatte/core/src/Repositories/PageRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/modulatte/core/src/Repositories/PageRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/resources_js_components_Header_vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/resources_js_components_Header_vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/resources_js_components_Header_vue.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/resources_js_components_Header_vue.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/resources_js_components_SliderServiceGallery_vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/resources_js_components_SliderServiceGallery_vue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/resources_js_components_SliderServiceGallery_vue.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/resources_js_components_SliderServiceGallery_vue.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/resources_js_components_SliderServices_vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/resources_js_components_SliderServices_vue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/resources_js_components_SliderServices_vue.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/resources_js_components_SliderServices_vue.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Header.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/SliderServiceGallery.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/SliderServiceGallery.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/SliderServices.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/SliderServices.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/core/_forms.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/core/_forms.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/sass/pages/_home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/pages/_home.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/contactEntries/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/contactEntries/form.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/pages/_home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/pages/_home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/components/forms/_contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/forms/_contact.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/layouts/_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/layouts/_footer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/pages/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/pages/home.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +35,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -258,10 +263,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ComposerRunConfigurationType" factoryName="Composer Script">
-      <option name="pathToComposerJson" value="$PROJECT_DIR$/composer.json" />
-      <method v="2" />
-    </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
@@ -275,7 +276,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1779165955896</updated>
-      <workItem from="1779165959198" duration="7485000" />
+      <workItem from="1779165959198" duration="39563000" />
+      <workItem from="1779444763719" duration="7299000" />
     </task>
     <servers />
   </component>

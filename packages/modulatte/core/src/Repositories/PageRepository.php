@@ -30,6 +30,13 @@ class PageRepository extends ModuleRepository
             'services_title',
             'services_description',
 
+            'wwa_title',
+            'wwa_quote',
+            'wwa_content',
+
+            'wwy_description',
+            'wwy_title',
+
             'home_features_content',
 
             'about_text',

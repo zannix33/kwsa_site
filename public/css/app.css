@@ -28,11 +28,11 @@
 .mr-2{
   margin-right: 0.5rem;
 }
-.table{
-  display: table;
-}
 .flex{
   display: flex;
+}
+.table{
+  display: table;
 }
 .inline-block{
   display: inline-block;
@@ -1010,7 +1010,7 @@ textarea,
 select {
   display: inline-block;
   width: 100%;
-  height: 46px;
+  height: 40px;
   padding: 11px 15px;
   font-family: poppins, "Arial", "Helvetica Neue", "Helvetica", sans-serif;
   font-size: 16px;
@@ -1058,7 +1058,7 @@ select:focus {
 
 textarea,
 select[multiple] {
-  height: 180px;
+  height: 97px;
 }
 
 select::-ms-expand {
@@ -1745,6 +1745,7 @@ footer {
   /********************************************/
   /********************************************/
   /********************************************/
+  /********************************************/
 }
 .page-home .features-section {
   background-image: url("/images/features-bg.png");
@@ -1809,13 +1810,24 @@ footer {
 .page-home .features-section .features .feature-box .feature-content p {
   color: #fff;
 }
-.page-home .features-section .features .feature-main {
+.page-home .features-section .features .feature-items {
   position: absolute;
-  width: calc(33.33% - 66px);
+  display: flex;
+  justify-content: space-evenly;
+  bottom: -190px;
+}
+.page-home .features-section .features .feature-main {
+  position: relative;
+  width: calc(33.33% - 33px);
   margin-top: 46px;
+  background-color: #1F5FCC;
+  border-top: 16px solid #0B3D91;
+  border-bottom: 8px solid #0B3D91;
+  padding: 37px 22px 22px;
   color: #fff;
 }
 .page-home .features-section .features .feature-main .feature-title {
+  margin-top: 37px;
   color: #fff;
   font-family: "Poppins";
   font-style: normal;
@@ -1827,7 +1839,8 @@ footer {
   font-weight: 700;
 }
 .page-home .features-section .features .feature-main .feature-icon {
-  margin-top: 37px;
+  position: absolute;
+  top: -42px;
   background-color: #C8A951;
   width: 66px;
   height: 66px;
@@ -1847,7 +1860,7 @@ footer {
 }
 .page-home .features-section .features .feature-main .feature-description {
   margin-top: 8px;
-  font-family: "poppins";
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1872,37 +1885,57 @@ footer {
   color: #fff;
 }
 .page-home .about-section {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 45px;
 }
-.page-home .about-section .about-container {
+.page-home .about-section .about-box {
+  border: 2px solid #0B3D91;
+  border-radius: 10px;
+  padding: 52px 22px;
+  width: calc((100%/3) - 64px);
   position: relative;
 }
-.page-home .about-section .about-container .about-title {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 150%;
-  /* identical to box height, or 48px */
-  color: #005C32;
+.page-home .about-section .about-box .about-icon {
+  position: absolute;
+  height: 74px;
+  width: 74px;
+  background-color: #0B3D91;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  top: -38px;
 }
-.page-home .about-section .about-container .about-title strong {
+.page-home .about-section .about-box .about-icon img {
+  height: 40px;
+  width: 40px;
+  margin: auto auto;
+}
+.page-home .about-section .about-box .about-title {
+  font-family: Poppins;
   font-weight: 600;
+  font-style: SemiBold;
+  font-size: 24px;
+  leading-trim: NONE;
+  line-height: 23px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #1F5FCC;
 }
-.page-home .about-section .about-container .about-content {
-  margin-top: 24px;
-  width: 570px;
-  font-family: "poppins";
-  font-style: normal;
+.page-home .about-section .about-box .about-content {
+  font-family: Inter;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 180%;
-  /* or 32px */
-  letter-spacing: 0.05em;
-  color: #005C32;
+  font-style: Regular;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
 }
-.page-home .about-section .about-container .about-box {
+.page-home .about-section .about-box .about-box {
   margin-top: 32px;
   border-left: 7px solid #005C32;
   padding: 24px 23px 24px 30px;
@@ -1914,7 +1947,7 @@ footer {
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
 }
-.page-home .about-section .about-container .about-box p {
+.page-home .about-section .about-box .about-box p {
   margin: 0;
   font-family: "poppins";
   font-style: normal;
@@ -1924,11 +1957,11 @@ footer {
   /* or 32px */
   color: #005C32;
 }
-.page-home .about-section .about-container .about-box p strong {
+.page-home .about-section .about-box .about-box p strong {
   font-size: 21px;
   font-weight: 600;
 }
-.page-home .about-section .about-container .about-note {
+.page-home .about-section .about-box .about-note {
   margin-top: 16px;
   font-family: "poppins";
   font-style: normal;
@@ -1939,7 +1972,7 @@ footer {
   letter-spacing: 0.05em;
   color: #005C32;
 }
-.page-home .about-section .about-container .img-right {
+.page-home .about-section .about-box .img-right {
   position: absolute;
   top: 50%;
   right: 20px;
@@ -2092,11 +2125,114 @@ footer {
   /* or 36px */
   color: #FFFFFF;
 }
+.page-home .we-want-you .wwy-box {
+  display: flex;
+}
+.page-home .we-want-you .wwy-box div {
+  width: calc(50%);
+}
+.page-home .we-want-you .wwy-box .left {
+  margin-top: 60px;
+}
+.page-home .we-want-you .wwy-box .left .title {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 36px;
+  leading-trim: NONE;
+  line-height: 34px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #0B3D91;
+}
+.page-home .we-want-you .wwy-box .left .description {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #111111;
+}
+.page-home .we-want-you .wwy-box .left .wwy-reason-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 44px;
+}
+.page-home .we-want-you .wwy-box .left .wwy-reason-box .title {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 24px;
+  leading-trim: NONE;
+  line-height: 23px;
+  letter-spacing: 0%;
+  color: #1F5FCC;
+}
+.page-home .we-want-you .wwy-box .left .wwy-reason-box .lead {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #111111;
+  margin-bottom: 7px;
+}
+.page-home .we-want-you .wwy-box .left .wwy-reason-box .reason-content {
+  width: 100%;
+}
+.page-home .we-want-you .wwy-box .left .wwy-reason-box .reason-content ul {
+  list-style: none;
+  /* Removes the default bullet */
+  padding-left: 10px;
+  margin-bottom: 6px;
+}
+.page-home .we-want-you .wwy-box .left .wwy-reason-box .reason-content li {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  padding-left: 6px;
+  margin-bottom: 6px;
+}
+.page-home .we-want-you .wwy-box .left .wwy-reason-box .reason-content li::marker {
+  content: "✓";
+  /* Standard checkmark Unicode */
+  color: green;
+  /* Sets the color to green */
+  font-size: 1em;
+  /* Optional: adjust size */
+}
+.page-home .we-want-you .wwy-box .left .reason-bottom {
+  font-family: Poppins;
+  font-weight: 600;
+  font-style: Italic;
+  font-size: 18px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin: 44px 0 50px;
+  width: 100%;
+}
+.page-home .we-want-you .right {
+  background-image: url("/images/wewantyou.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 .page-home .grow-section {
   background: #1F5FCC;
+  border-bottom: 12px solid #C8A951;
+  padding-top: 26px;
   margin-bottom: 316px;
 }
 .page-home .grow-section .grow-container {
+  position: relative;
   display: flex;
   justify-content: space-between;
 }
@@ -2107,6 +2243,10 @@ footer {
 }
 .page-home .grow-section .grow-container .left div {
   width: 498px;
+}
+.page-home .grow-section .grow-container .left img {
+  position: absolute;
+  height: 100%;
 }
 .page-home .grow-section .grow-container .left .grow-title {
   font-family: "Poppins";
@@ -2144,6 +2284,7 @@ footer {
   background: #FFFFFF;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.08);
   border-radius: 8px;
+  margin-bottom: 26px;
 }
 .page-home .discover-section {
   background: #FAFBFF;
@@ -2263,31 +2404,39 @@ footer {
 .page-home .services-section .services-description {
   margin-top: 29px;
   margin-bottom: 40px;
-  font-family: "Poppins";
+  font-family: "Inter";
   font-weight: 400;
   font-size: 16px;
   line-height: 100%;
   text-align: center;
 }
+.page-home .services-section .services-description p {
+  width: 544px;
+  margin: 0 auto;
+}
 .page-home .services-section .services-items {
   display: flex;
   flex-direction: column;
 }
-.page-home .services-section .service-main {
-  display: inline-flex;
-  margin-bottom: 107px;
-}
-.page-home .services-section .service-main :nth-child(even) .service-title {
+.page-home .services-section .services-items :nth-child(even) .service-image {
   order: 1;
 }
-.page-home .services-section .service-main :nth-child(even) .service-content {
-  order: 2;
+.page-home .services-section .services-items :last-child {
+  margin-bottom: 0px;
+}
+.page-home .services-section .service-main {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 107px;
+  justify-content: space-between;
+}
+.page-home .services-section .service-main > div {
+  width: calc((100% /2) - 33px);
 }
 .page-home .services-section .service-main div {
   width: calc(50% - 32px);
 }
 .page-home .services-section .service-main .service-title {
-  width: 100%;
   margin-bottom: 39px;
   font-family: Poppins;
   font-weight: 600;
@@ -2297,14 +2446,34 @@ footer {
   letter-spacing: 0%;
   color: #1F5FCC;
 }
+.page-home .services-section .service-main .service-image {
+  display: flex;
+}
 .page-home .services-section .service-main .service-content {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
   font-family: Inter;
   font-weight: 400;
   font-size: 16px;
   leading-trim: NONE;
   line-height: 100%;
   letter-spacing: 0%;
+}
+.page-home .services-section .service-main .service-content .protect-button {
+  margin-top: auto;
+}
+.page-home .protect-button {
+  background-color: #0B3D91;
+  width: 255px;
+  height: 48px;
+  padding: 11px 22px;
+  border-radius: 5px;
+  font-family: Poppins;
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: white;
 }
 .page-home .booking-section {
   padding: 40px 0;
@@ -2402,6 +2571,87 @@ footer {
   .page-home .testimonials-section .contact-info .block p {
     font-size: 22px;
   }
+}
+.page-home .wwa-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-image: url("/images/security-group.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* Scales image to fill the div (may crop) */
+  background-position: top;
+  margin-bottom: 75px;
+}
+.page-home .wwa-container div {
+  width: calc(50% - 35px);
+}
+.page-home .wwa-container .left {
+  display: flex;
+  flex-direction: column;
+  margin-top: 407px;
+}
+.page-home .wwa-container .left .title {
+  font-family: Poppins;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 36px;
+  leading-trim: NONE;
+  line-height: 34px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #0B3D91;
+}
+.page-home .wwa-container .left .quote {
+  font-family: Poppins;
+  font-weight: 400;
+  font-style: Italic;
+  font-size: 18px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.page-home .wwa-container .left .protect-button {
+  margin-top: auto;
+}
+.page-home .wwa-container .right {
+  display: flex;
+  flex-direction: column;
+  margin-top: 415px;
+}
+.page-home .clients-section {
+  background-color: #1F5FCC;
+  padding: 66px 0 68px;
+}
+.page-home .clients-section .client-section-title {
+  font-family: Poppins;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 36px;
+  leading-trim: NONE;
+  line-height: 34px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #C8A951;
+}
+.page-home .clients-section .client-logos {
+  display: flex;
+  margin-top: 58px;
+  justify-content: space-evenly;
+  transition: transform 0.5s ease-in-out;
+}
+.page-home .clients-section .client-logos img {
+  width: auto;
+  max-height: 93px;
+}
+.page-home .clients-section .client-logos .slick-track {
+  display: flex;
+  align-items: center;
+}
+.page-home .clients-section .client-logos .slick-track .slick-slide article img {
+  width: auto;
+  max-height: 93px !important;
 }
 
 /*********************************************

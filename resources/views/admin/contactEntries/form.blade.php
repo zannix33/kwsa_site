@@ -5,6 +5,8 @@
 <br>
 Name: {{$item->full_name}}<br>
 Email: {{$item->email}}<br>
+Company: {{$item->company}}<br>
+Phone: {{$item->phone}}<br>
 Date: {{$item->submitted_at}}<br>
 Subject: {{$item->subject}}
 @if (!empty($item->data['address']))

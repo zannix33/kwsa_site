@@ -9,23 +9,30 @@
 
     <div class="form-fields-stack two-column">
         <div class="form-field">
-            {{Form::label('name', 'Your Name*') }}
-            {{ Form::text('name', null, ['maxlength' => 255, 'id' => 'fullname']) }}
+            {{Form::label('firstname', 'First Name') }}
+            {{ Form::text('first_name', null, ['maxlength' => 255, 'id' => 'lastname']) }}
         </div>
+        <div class="form-field">
+            {{Form::label('lastname', 'Last Name*') }}
+            {{ Form::text('last_name', null, ['maxlength' => 255, 'id' => 'lastname']) }}
+        </div>
+
+
+
+    </div>
+
+    <div class="form-fields-stack three-column">
         <div class="form-field">
             {{Form::label('email', 'Your Email*') }}
             {{ Form::email('email', null, ['maxlength' => 255, 'id' => 'email']) }}
         </div>
-    </div>
-
-    <div class="form-fields-stack two-column">
         <div class="form-field">
             {{Form::label('company', 'Company Name') }}
             {{ Form::text('company', null, ['maxlength' => 255, 'id' => 'company']) }}
         </div>
         <div class="form-field">
             {{Form::label('Phone Number', 'Phone Number*') }}
-            {{ Form::number('Phone', null, ['maxlength' => 255, 'id' => 'phone']) }}
+            {{ Form::number('phone', null, ['maxlength' => 255, 'id' => 'phone']) }}
         </div>
     </div>
 
@@ -35,7 +42,7 @@
     </div>
 
     <div class="form-field send">
-        <button class="button grey">Send</button>
+        <button class="button grey">Get Protected Today</button>
     </div>
 @endif
 </form>

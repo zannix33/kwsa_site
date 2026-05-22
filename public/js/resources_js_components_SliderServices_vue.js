@@ -49,7 +49,7 @@ __webpack_require__.r(__webpack_exports__);
       isOpen: false,
       settings: {
         'dots': false,
-        'arrows': true,
+        'arrows': false,
         'edgeFriction': 0.35,
         'infinite': false,
         'speed': 500,
@@ -379,17 +379,6 @@ var render = function() {
           return _c("article", [
             _c("a", { staticClass: "image", attrs: { href: slide.url } }, [
               _c("img", { attrs: { src: slide.image, alt: slide.title } })
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "text" }, [
-              _c("h3", { staticClass: "h4" }, [_vm._v(_vm._s(slide.title))]),
-              _vm._v(" "),
-              _c("a", { attrs: { href: slide.url } }, [
-                _vm._v("Learn more "),
-                _c("span", { staticClass: "material-icons" }, [
-                  _vm._v("arrow_forward")
-                ])
-              ])
             ])
           ])
         }),

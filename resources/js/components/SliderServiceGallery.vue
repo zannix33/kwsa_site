@@ -1,13 +1,13 @@
 <template>
   <div class='services-gall-slideshow'>
-    
+
     <VueSlickCarousel
       v-bind='settings'
     >
       <article v-for='slide of slides'>
 
         <img :src="slide.image" alt="">
-        <h3>{{ slide.title }}</h3>
+        <!--<h3>{{ slide.title }}</h3>-->
 
       </article>
     </VueSlickCarousel>
@@ -29,12 +29,15 @@ export default {
   data: () => ({
     isOpen: false,
     settings: {
-      'dots': true,
-      'arrows': true,
-      'infinite': false,
-      'speed': 500,
-      'slidesToShow': 1,
-      'slidesToScroll': 1
+      "arrows": false,
+      "dots": false,
+      "infinite": true,
+      "slidesToShow": 3,
+      "slidesToScroll": 1,
+      "autoplay": true,
+      "speed": 2000,
+      "autoplaySpeed": 2000,
+      "cssEase": "linear",
     }
   }),
 
@@ -52,8 +55,9 @@ export default {
   max-width: 770px;
 
   article {
-    width: 100%;
-    padding: 0;
+    width: auto;
+    max-height: 93px;
+    padding: 0 49px;
 
     text-align: center;
 
