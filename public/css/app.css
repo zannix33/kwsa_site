@@ -1809,9 +1809,27 @@ footer {
   font-size: 18px;
   line-height: 180%;
   letter-spacing: 0.05em;
+  margin-bottom: 109px;
 }
 .page-home .features-section .features .feature-box .feature-content p {
   color: #fff;
+}
+.page-home .features-section .features .feature-box .header-button {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 18px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  color: #111;
+  background-color: #C8A951;
+  padding: 28px 22px;
+  border-radius: 4px;
+}
+.page-home .features-section .features .feature-box .header-button:hover {
+  background-color: #fff;
 }
 .page-home .features-section .features .feature-items {
   position: absolute;
@@ -1821,13 +1839,19 @@ footer {
 }
 .page-home .features-section .features .feature-main {
   position: relative;
-  width: calc(33.33% - 33px);
+  gap: 20px;
+  width: 33.33%;
   margin-top: 46px;
   background-color: #1F5FCC;
   border-top: 16px solid #0B3D91;
   border-bottom: 8px solid #0B3D91;
   padding: 37px 22px 22px;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
   color: #fff;
+}
+.page-home .features-section .features .feature-main:hover {
+  transform: translateY(0);
 }
 .page-home .features-section .features .feature-main .feature-title {
   margin-top: 37px;

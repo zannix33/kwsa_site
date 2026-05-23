@@ -11,26 +11,13 @@
                     <div class="feature-content">
                         {!! modFieldValue($data, 'header_lead_copy') !!}
                     </div>
+
+                    <a href="#contact-form" class="header-button">Get Protected Today</a>
                 </div>
 
                 <div class="feature-box">
                     <img src="/images/guards/heroimg1.png">
                 </div>
-
-                {{--@foreach($features as $feature)
-                    <div class="feature-box">
-                        <div class="feature-icon">
-                            <img src="{{ $feature['icon'] }}">
-                        </div>
-                        <div class="feature-lead">
-                            {{ $feature['title'] }}
-                        </div>
-                        <div class="feature-description">
-                            {{ $feature['content'] }}
-                        </div>
-                    </div>
-                @endforeach
-                --}}
 
 
                 <div class="content-max-width flex feature-items">
