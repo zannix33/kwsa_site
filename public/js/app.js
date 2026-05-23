@@ -39,6 +39,25 @@ Vue.component('app-gallery', function () {
 Vue.component('app-map', function () {
   return __webpack_require__.e(/*! import() */ "resources_js_components_Map_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/Map */ "./resources/js/components/Map.vue"));
 });
+console.log("boxes");
+var section = document.querySelector('#aboutSection');
+var boxes = document.querySelectorAll('.about-box');
+var observer = new IntersectionObserver(function (entries) {
+  entries.forEach(function (entry) {
+    if (entry.isIntersecting) {
+      boxes.forEach(function (box, index) {
+        setTimeout(function () {
+          box.classList.add('show');
+        }, index * 300); // delay each box
+      });
+    }
+  });
+}, {
+  threshold: 0.3
+});
+observer.observe(section);
+console.log(observer);
+console.log(section);
 var app = new Vue({
   el: '#app',
   data: function data() {

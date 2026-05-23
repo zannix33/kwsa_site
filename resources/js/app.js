@@ -16,6 +16,32 @@ Vue.component('app-gallery', () => import('./components/GalleryArea'));
 
 Vue.component('app-map', () => import('./components/Map'));
 
+console.log("boxes");
+
+const section = document.querySelector('#aboutSection');
+const boxes = document.querySelectorAll('.about-box');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+
+      boxes.forEach((box, index) => {
+        setTimeout(() => {
+          box.classList.add('show');
+        }, index * 300); // delay each box
+      });
+
+    }
+  });
+}, {
+  threshold: 0.3
+});
+
+observer.observe(section);
+
+console.log(observer);
+console.log(section);
+
 const app = new Vue({
   el: '#app',
 

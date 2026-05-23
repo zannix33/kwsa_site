@@ -1889,6 +1889,9 @@ footer {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
   margin-bottom: 45px;
 }
 .page-home .about-section .about-box {
@@ -1897,6 +1900,30 @@ footer {
   padding: 52px 22px;
   width: calc((100%/3) - 64px);
   position: relative;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.8s ease-out;
+  /*  p {
+      margin: 0;
+
+      font-family: 'poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 180%;
+      /* or 32px */
+  /*   color: #005C32;
+
+      strong {
+        font-size: 21px;
+        font-weight: 600;
+      }
+    }
+  }*/
+}
+.page-home .about-section .about-box.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 .page-home .about-section .about-box .about-icon {
   position: absolute;
@@ -1935,32 +1962,6 @@ footer {
   line-height: 100%;
   letter-spacing: 0%;
   text-align: center;
-}
-.page-home .about-section .about-box .about-box {
-  margin-top: 32px;
-  border-left: 7px solid #005C32;
-  padding: 24px 23px 24px 30px;
-  width: 570px;
-  background: #D3AF5E;
-  border-radius: 20px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 20px;
-  border-top-right-radius: 20px;
-}
-.page-home .about-section .about-box .about-box p {
-  margin: 0;
-  font-family: "poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 180%;
-  /* or 32px */
-  color: #005C32;
-}
-.page-home .about-section .about-box .about-box p strong {
-  font-size: 21px;
-  font-weight: 600;
 }
 .page-home .about-section .about-box .about-note {
   margin-top: 16px;

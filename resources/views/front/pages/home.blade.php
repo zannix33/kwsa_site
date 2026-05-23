@@ -133,7 +133,7 @@
             </div>
         </section>
 
-        <section class="about-section content-max-width">
+        <div class="about-section content-max-width" id="aboutSection">
 
             <div class="about-box">
                 <div class="about-icon">
@@ -174,7 +174,7 @@
                 </p>
             </div>
 
-        </section>
+        </div>
 
         <section class="we-want-you content-max-width">
             <div class="wwy-box">
