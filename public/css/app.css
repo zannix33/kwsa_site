@@ -1839,8 +1839,7 @@ footer {
 }
 .page-home .features-section .features .feature-main {
   position: relative;
-  gap: 20px;
-  width: 33%;
+  width: calc((100%/3) - 66px);
   margin-top: 46px;
   background-color: #1F5FCC;
   border-top: 16px solid #0B3D91;

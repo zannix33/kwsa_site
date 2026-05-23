@@ -126,9 +126,8 @@
         //position: relative;
 
         position: relative;
-        gap: 20px;
 
-        width: 33%;
+        width: calc((100%/3) - 66px);
         margin-top: 46px;
         background-color: #1F5FCC;
 
