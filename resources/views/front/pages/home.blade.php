@@ -80,7 +80,7 @@
                                     {{ $service['content'] }}
                                 </p>
 
-                                <a href="#" class="protect-button">Get Protected Today</a>
+                                <a href="#contact-form"  class="protect-button">Get Protected Today</a>
                             </div>
                         </div>
                     @endforeach
@@ -119,7 +119,7 @@
                         <h4 class="title">{!! nl2br(modFieldValue($data, 'wwa_title')) !!}</h4>
                         <h4 class="quote">"{!! nl2br(modFieldValue($data, 'wwa_quote')) !!}"</h4>
 
-                        <a href="#" class="protect-button">Get Protected Today</a>
+                        <a href="#contact-form" class="protect-button">Get Protected Today</a>
                     </div>
 
                     <div class="right">
@@ -216,7 +216,7 @@
                         <div class="grow-title">
                             Get in Touch
                         </div>
-                        <div class="contact-container">
+                        <div class="contact-container" id="contact-form">
                             @include('components.forms._contact')
                         </div>
                     </div>
