@@ -127,7 +127,7 @@
 
         position: relative;
 
-        width: calc((100%/3) - 66px);
+        width: calc((100%/3) - 56px);
         margin-top: 46px;
         background-color: #1F5FCC;
 
@@ -152,7 +152,6 @@
           color: #fff;
 
           font-family: 'Poppins';
-          font-style: normal;
           font-weight: 400;
           font-size: 35px;
           line-height: 150%;
@@ -179,8 +178,7 @@
 
         .feature-lead {
           margin-top: 18px;
-          font-family: 'poppins';
-          font-style: normal;
+          font-family: 'Poppins';
           font-weight: 400;
           font-size: 20px;
           line-height: 150%;
@@ -189,9 +187,8 @@
         .feature-description {
           margin-top: 8px;
           font-family: 'Inter';
-          font-style: normal;
           font-weight: 400;
-          font-size: 16px;
+          font-size: 15px;
           line-height: 180%;
           /* or 29px */
           letter-spacing: 0.05em;
