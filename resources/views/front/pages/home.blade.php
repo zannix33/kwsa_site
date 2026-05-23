@@ -134,8 +134,7 @@
         </section>
 
         <div class="about-section content-max-width" id="aboutSection">
-
-            <div class="about-box">
+            <div class="about-box aboutBox">
                 <div class="about-icon">
                     <img src="/images/missionicon.svg">
                 </div>
@@ -148,7 +147,7 @@
                 </p>
             </div>
 
-            <div class="about-box">
+            <div class="about-box aboutBox">
                 <div class="about-icon">
                     <img src="/images/visionicon.svg">
                 </div>
@@ -161,7 +160,7 @@
                 </p>
             </div>
 
-            <div class="about-box">
+            <div class="about-box aboutBox">
                 <div class="about-icon">
                     <img src="/images/valuesicon.svg">
                 </div>
@@ -226,3 +225,34 @@
 
     </main>
 </x-layouts.app-layout>
+
+<script>
+    const section = document.getElementById('aboutSection');
+    const boxes = document.querySelectorAll('.about-box');
+    let animated = false;
+    console.log(section.getBoundingClientRect().top, window.innerHeight)
+
+    function checkScroll() {
+        const sectionTop = section.getBoundingClientRect().top;
+        const screenHeight = window.innerHeight;
+        console.log(sectionTop);
+
+        // Trigger when section enters viewport
+        if (sectionTop < screenHeight * 0.8 && !animated) {
+            animated = true;
+            console.log('condition met');
+
+
+            boxes.forEach((box, index) => {
+                setTimeout(() => {
+                    box.classList.add('show');
+                }, index * 300);
+            });
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        window.addEventListener('scroll', checkScroll, true);
+        checkScroll();
+    });
+
+</script>

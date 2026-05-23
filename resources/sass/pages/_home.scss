@@ -2,6 +2,8 @@
 :: Home Page
 ********************************************/
 .page-home {
+  display: flex;
+  flex-direction: column;
 
   .features-section {
 
@@ -197,19 +199,26 @@
 
     margin-bottom: 45px;
 
+    //padding: 10px 10px;
+
     .about-box {
+      display: flex;
+      flex-direction: column;
       border: 2px solid #0B3D91;
       border-radius: 10px;
+
 
       //padding-top: 52px;
       //padding-bottom: 52px;
       padding: 52px 22px;
 
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+
       width: calc((100%/3) - 64px);
       position: relative;
 
       opacity: 0;
-      transform: translateY(100px);
+      transform: translateY(50px);
 
       transition: all 0.8s ease-out;
 
