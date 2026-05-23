@@ -16,7 +16,14 @@
                 </div>
 
                 <div class="feature-box">
-                    <img src="/images/guards/heroimg1.png">
+                    <div class="slider">
+                        <img src="/images/guards/heroimg1.png" class="slide">
+                        <img src="/images/guards/heroimg2.png" class="slide">
+                        <img src="/images/guards/heroimg3.png" class="slide">
+                        <img src="/images/guards/heroimg4.png" class="slide">
+                    </div>
+
+
                 </div>
 
 
@@ -241,5 +248,22 @@
         window.addEventListener('scroll', checkScroll, true);
         checkScroll();
     });
+
+    const slides = document.querySelectorAll('.slide');
+    let current = 0;
+
+    function changeSlide() {
+        // Remove active class
+        slides[current].classList.remove('active');
+
+        // Next image
+        current = (current + 1) % slides.length;
+
+        // Add active class
+        slides[current].classList.add('active');
+    }
+
+    // Change image every 3 seconds
+    setInterval(changeSlide, 3000);
 
 </script>

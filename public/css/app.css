@@ -1815,6 +1815,7 @@ footer {
   color: #fff;
 }
 .page-home .features-section .features .feature-box .header-button {
+  display: inline-block;
   font-family: Poppins;
   font-weight: 500;
   font-size: 18px;
@@ -1823,6 +1824,7 @@ footer {
   letter-spacing: 0%;
   text-align: center;
   vertical-align: middle;
+  margin-bottom: 170px;
   color: #111;
   background-color: #C8A951;
   padding: 28px 22px;
@@ -1830,6 +1832,27 @@ footer {
 }
 .page-home .features-section .features .feature-box .header-button:hover {
   background-color: #fff;
+}
+.page-home .features-section .features .feature-box .slider {
+  position: relative;
+  width: auto;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.page-home .features-section .features .feature-box .slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out, transform 2s ease;
+  transform: scale(1.1);
+}
+.page-home .features-section .features .feature-box .slide.active {
+  opacity: 1;
+  transform: scale(1);
 }
 .page-home .features-section .features .feature-items {
   position: absolute;
