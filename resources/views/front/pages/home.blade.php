@@ -15,7 +15,7 @@
                     <a href="#contact-form" class="header-button">Get Protected Today</a>
                 </div>
 
-                <div class="feature-box">
+                <div class="feature-box hero-slider">
                     <div class="slider">
                         <img src="/images/guards/heroimg1.png" class="slide">
                         <img src="/images/guards/heroimg2.png" class="slide">

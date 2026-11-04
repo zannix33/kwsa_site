@@ -1459,7 +1459,7 @@ footer {
   position: relative;
   width: 100%;
   min-height: 79px;
-  background: #fff;
+  background: #0B3D91;
 }
 @media (min-width: 1025px) {
   .site-footer {
@@ -1760,9 +1760,37 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
 }
+@media (max-width: 600px) {
+  .page-home .features-section .features .feature-items {
+    visibility: hidden;
+  }
+  .page-home .features-section .features .feature-items .feature-main {
+    width: 100%;
+  }
+}
 .page-home .features-section .features .feature-box {
   width: calc(50% - 40px);
   color: #fff;
+}
+@media (max-width: 600px) {
+  .page-home .features-section .features .feature-box {
+    padding: 0;
+    margin-top: 0px;
+    width: 100%;
+  }
+  .page-home .features-section .features .feature-box .slider {
+    visibility: hidden;
+  }
+  .page-home .features-section .features .feature-box .hero-slider {
+    display: none;
+  }
+  .page-home .features-section .features .feature-box .header-button {
+    margin-bottom: 0px !important;
+  }
+  .page-home .features-section .features .feature-box .feature-title {
+    margin-top: 0px !important;
+    padding: 0 0 60px;
+  }
 }
 .page-home .features-section .features .feature-box .feature-title {
   margin-top: 194px;
@@ -1775,6 +1803,17 @@ footer {
 }
 .page-home .features-section .features .feature-box .feature-title strong {
   font-weight: 700;
+}
+@media (max-width: 600px) {
+  .page-home .features-section .features .feature-box .feature-title {
+    padding: 120px 0 60px;
+  }
+  .page-home .features-section .features .feature-box .feature-title .slider {
+    visibility: hidden;
+  }
+  .page-home .features-section .features .feature-box .feature-title .hero-slider {
+    display: none;
+  }
 }
 .page-home .features-section .features .feature-box .feature-icon {
   margin-top: 37px;
@@ -2436,6 +2475,17 @@ footer {
   .page-home .services-section {
     padding: 120px 0 60px;
     margin-top: 189px;
+  }
+}
+@media (max-width: 600px) {
+  .page-home .services-section .services-description p {
+    width: 100% !important;
+  }
+  .page-home .services-section .services-items .service-main {
+    flex-direction: column;
+  }
+  .page-home .services-section .services-items .service-main div {
+    width: auto;
   }
 }
 .page-home .services-section .services-title {
