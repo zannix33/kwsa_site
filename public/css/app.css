@@ -2518,6 +2518,11 @@ footer {
 .page-home .services-section .services-items :nth-child(even) .service-image {
   order: 1;
 }
+@media (max-width: 600px) {
+  .page-home .services-section .services-items :nth-child(even) .service-image {
+    order: 0;
+  }
+}
 .page-home .services-section .services-items :last-child {
   margin-bottom: 0px;
 }

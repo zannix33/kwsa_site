@@ -1048,6 +1048,10 @@
         //border: 1px solid black;
         .service-image {
           order: 1;
+
+          @media (max-width: $smallish) {
+            order: 0;
+          }
         }
       }
 

@@ -38,6 +38,17 @@ export default {
       "speed": 2000,
       "autoplaySpeed": 2000,
       "cssEase": "linear",
+      'responsive': [
+        {
+          'breakpoint': 480,
+          'settings': {
+            'slidesToShow': 1,
+            'slidesToScroll': 1,
+            'infinite': true,
+            'dots': true
+          }
+        }
+      ]
     }
   }),
 

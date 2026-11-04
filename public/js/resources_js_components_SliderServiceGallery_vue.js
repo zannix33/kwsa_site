@@ -53,7 +53,16 @@ __webpack_require__.r(__webpack_exports__);
         "autoplay": true,
         "speed": 2000,
         "autoplaySpeed": 2000,
-        "cssEase": "linear"
+        "cssEase": "linear",
+        'responsive': [{
+          'breakpoint': 480,
+          'settings': {
+            'slidesToShow': 1,
+            'slidesToScroll': 1,
+            'infinite': true,
+            'dots': true
+          }
+        }]
       }
     };
   },
@@ -86,7 +95,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".services-gall-slideshow {\n  width: 100%;\n  max-width: 770px;\n}\n.services-gall-slideshow article {\n  width: auto;\n  max-height: 93px;\n  padding: 0 49px;\n  text-align: center;\n}\n.services-gall-slideshow article h3 {\n  margin: 0 auto;\n  padding: 30px;\n  font-size: 16px;\n  font-weight: 400;\n  line-height: 28px;\n  text-align: left;\n  color: white;\n  background: #394e54;\n}\n.services-gall-slideshow .slick-prev:before,\n.services-gall-slideshow .slick-next:before {\n  color: white;\n}", "",{"version":3,"sources":["webpack://./resources/js/components/SliderServiceGallery.vue"],"names":[],"mappings":"AAoDA;EACE,WAAA;EACA,gBAAA;AAnDF;AAqDE;EACE,WAAA;EACA,gBAAA;EACA,eAAA;EAEA,kBAAA;AApDJ;AAsDI;EACE,cAAA;EACA,aAAA;EAEA,eAAA;EACA,gBAAA;EACA,iBAAA;EACA,gBAAA;EACA,YAAA;EAEA,mBAAA;AAtDN;AA+DI;;EACE,YAAA;AA5DN","sourcesContent":["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.services-gall-slideshow {\n  width: 100%;\n  max-width: 770px;\n\n  article {\n    width: auto;\n    max-height: 93px;\n    padding: 0 49px;\n\n    text-align: center;\n\n    h3 {\n      margin: 0 auto;\n      padding: 30px;\n\n      font-size: 16px;\n      font-weight: 400;\n      line-height: 28px;\n      text-align: left;\n      color: white;\n\n      background: #394e54;\n    }\n  }\n\n  .slick-prev,\n  .slick-next {\n    @media (min-width: 1024px) {\n    }\n\n    &:before {\n      color: white;\n    }\n  }\n\n  .slick-next {\n    @media (min-width: 1024px) {\n    }\n  }\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".services-gall-slideshow {\n  width: 100%;\n  max-width: 770px;\n}\n.services-gall-slideshow article {\n  width: auto;\n  max-height: 93px;\n  padding: 0 49px;\n  text-align: center;\n}\n.services-gall-slideshow article h3 {\n  margin: 0 auto;\n  padding: 30px;\n  font-size: 16px;\n  font-weight: 400;\n  line-height: 28px;\n  text-align: left;\n  color: white;\n  background: #394e54;\n}\n.services-gall-slideshow .slick-prev:before,\n.services-gall-slideshow .slick-next:before {\n  color: white;\n}", "",{"version":3,"sources":["webpack://./resources/js/components/SliderServiceGallery.vue"],"names":[],"mappings":"AA+DA;EACE,WAAA;EACA,gBAAA;AA9DF;AAgEE;EACE,WAAA;EACA,gBAAA;EACA,eAAA;EAEA,kBAAA;AA/DJ;AAiEI;EACE,cAAA;EACA,aAAA;EAEA,eAAA;EACA,gBAAA;EACA,iBAAA;EACA,gBAAA;EACA,YAAA;EAEA,mBAAA;AAjEN;AA0EI;;EACE,YAAA;AAvEN","sourcesContent":["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.services-gall-slideshow {\n  width: 100%;\n  max-width: 770px;\n\n  article {\n    width: auto;\n    max-height: 93px;\n    padding: 0 49px;\n\n    text-align: center;\n\n    h3 {\n      margin: 0 auto;\n      padding: 30px;\n\n      font-size: 16px;\n      font-weight: 400;\n      line-height: 28px;\n      text-align: left;\n      color: white;\n\n      background: #394e54;\n    }\n  }\n\n  .slick-prev,\n  .slick-next {\n    @media (min-width: 1024px) {\n    }\n\n    &:before {\n      color: white;\n    }\n  }\n\n  .slick-next {\n    @media (min-width: 1024px) {\n    }\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
