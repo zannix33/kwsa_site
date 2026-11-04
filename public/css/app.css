@@ -2231,14 +2231,30 @@ footer {
   /* or 36px */
   color: #FFFFFF;
 }
+.page-home .we-want-you {
+  display: flex;
+}
 .page-home .we-want-you .wwy-box {
   display: flex;
+}
+@media (max-width: 600px) {
+  .page-home .we-want-you .wwy-box {
+    flex-direction: column;
+  }
 }
 .page-home .we-want-you .wwy-box div {
   width: calc(50%);
 }
 .page-home .we-want-you .wwy-box .left {
   margin-top: 60px;
+}
+@media (max-width: 600px) {
+  .page-home .we-want-you .wwy-box .left {
+    display: flex;
+    width: 100% !important;
+    flex-direction: column;
+    order: 2;
+  }
 }
 .page-home .we-want-you .wwy-box .left .title {
   font-family: Poppins;
@@ -2328,8 +2344,16 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
-  flex-direction: column;
   min-height: 100vh;
+}
+@media (max-width: 600px) {
+  .page-home .we-want-you .right {
+    width: 100% !important;
+    min-height: 62vh;
+    order: 1;
+    flex-direction: column;
+    background-position: top;
+  }
 }
 .page-home .grow-section {
   background: #1F5FCC;
@@ -2371,6 +2395,11 @@ footer {
   /* or 178% */
   color: #3E5463;
 }
+@media (max-width: 600px) {
+  .page-home .grow-section .grow-container .left {
+    display: none;
+  }
+}
 .page-home .grow-section .grow-container .right .grow-title {
   color: #C8A951;
   font-family: Poppins;
@@ -2390,6 +2419,11 @@ footer {
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.08);
   border-radius: 8px;
   margin-bottom: 26px;
+}
+@media (max-width: 600px) {
+  .page-home .grow-section .grow-container .right .contact-container {
+    width: 100%;
+  }
 }
 .page-home .discover-section {
   background: #FAFBFF;

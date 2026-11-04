@@ -653,10 +653,15 @@
   }
 
   .we-want-you {
+    display: flex;
 
     .wwy-box {
       display: flex;
 
+
+      @media (max-width: $smallish) {
+        flex-direction: column;
+      }
 
 
       div {
@@ -665,6 +670,14 @@
 
       .left {
         margin-top: 60px;
+
+        @media (max-width: $smallish) {
+          display: flex;
+          width: 100% !important;
+          flex-direction: column;
+          order: 2;
+        }
+
 
         .title {
           font-family: Poppins;
@@ -780,8 +793,17 @@
       background-repeat: no-repeat;
 
       display: flex;
-      flex-direction: column;
+
       min-height: 100vh;
+
+      @media (max-width: $smallish) {
+        width: 100% !important;
+        min-height: 62vh;
+        order: 1;
+        flex-direction: column;
+        background-position: top;
+
+      }
 
     }
 
@@ -840,6 +862,11 @@
 
         }
 
+        @media (max-width: $smallish) {
+         display: none;
+
+        }
+
       }
 
       .right {
@@ -867,6 +894,11 @@
           box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.08);
           border-radius: 8px;
           margin-bottom: 26px;
+
+          @media (max-width: $smallish) {
+            width: 100%;
+
+          }
         }
       }
     }
