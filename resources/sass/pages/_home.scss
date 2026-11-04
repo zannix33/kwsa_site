@@ -1264,6 +1264,34 @@
     background-size: contain;     /* Scales image to fill the div (may crop) */
     background-position: top;
 
+    @media (max-width: $smallish) {
+      background-size: auto 233px;
+      flex-direction: column;
+      text-align: center;
+
+      .left {
+        margin-top: 233px !important;
+        width: 100%;
+
+        .protect-button {
+          display: none;
+        }
+
+        .quote {
+          margin-bottom: 0px !important;
+        }
+      }
+
+      .right {
+        width: 100%;
+        margin-top: 30px !important;
+      }
+
+
+    }
+
+
+
     margin-bottom: 75px;
 
      div {

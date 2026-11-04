@@ -2685,6 +2685,27 @@ footer {
   background-position: top;
   margin-bottom: 75px;
 }
+@media (max-width: 600px) {
+  .page-home .wwa-container {
+    background-size: auto 233px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .page-home .wwa-container .left {
+    margin-top: 233px !important;
+    width: 100%;
+  }
+  .page-home .wwa-container .left .protect-button {
+    display: none;
+  }
+  .page-home .wwa-container .left .quote {
+    margin-bottom: 0px !important;
+  }
+  .page-home .wwa-container .right {
+    width: 100%;
+    margin-top: 30px !important;
+  }
+}
 .page-home .wwa-container div {
   width: calc(50% - 35px);
 }
