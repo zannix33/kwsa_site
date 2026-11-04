@@ -308,6 +308,10 @@
 
     margin-bottom: 45px;
 
+    @media (max-width: $smallish) {
+      flex-direction: column;
+    }
+
     //padding: 10px 10px;
 
     .about-box {
@@ -330,6 +334,19 @@
       transform: translateY(50px);
 
       transition: all 0.8s ease-out;
+
+      @media (max-width: $smallish) {
+        width: 100%;
+
+        margin-bottom: 50px;
+
+        .about-icon {
+          left: 0;
+          right: 0;
+          margin-inline: auto;
+          width: fit-content;
+        }
+      }
 
 
       &.show {

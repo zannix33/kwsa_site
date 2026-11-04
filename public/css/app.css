@@ -1976,6 +1976,11 @@ footer {
   flex-direction: row;
   margin-bottom: 45px;
 }
+@media (max-width: 600px) {
+  .page-home .about-section {
+    flex-direction: column;
+  }
+}
 .page-home .about-section .about-box {
   display: flex;
   flex-direction: column;
@@ -2005,6 +2010,20 @@ footer {
       }
     }
   }*/
+}
+@media (max-width: 600px) {
+  .page-home .about-section .about-box {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .page-home .about-section .about-box .about-icon {
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
 }
 .page-home .about-section .about-box.show {
   opacity: 1;
